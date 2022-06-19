@@ -1,0 +1,540 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+html {
+  background-color: #EFF1F3;
+  font-family: 'Mukta', sans-serif;
+  color: #272727;
+  margin: 0;
+}
+
+html body {
+  margin: 0;
+}
+
+html body img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+html body nav {
+  background-color: #272727;
+  color: #EFF1F3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 40px;
+}
+
+html body nav h1, html body nav h2 {
+  margin: 0 10px;
+}
+
+html body nav h2 {
+  font-size: 14px;
+}
+
+html body nav div.right-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body nav div.right-btn a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #EFF1F3;
+}
+
+html body nav div.right-btn a:nth-child(1) {
+  border: 1px solid #EFF1F3;
+  padding: 10px 15px;
+  margin: 0 10px;
+}
+
+html body nav div.right-btn a:nth-child(2) {
+  padding: 10px;
+  border: 1px solid #EFF1F3;
+  margin: 0 10px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body nav div.right-btn a:hover {
+  background-color: #EFF1F3;
+  color: #272727;
+}
+
+html body .search-input {
+  width: 80%;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+html body .search-input input {
+  padding: 10px 15px;
+  outline: none;
+  background-color: #272727;
+  color: #EFF1F3;
+  border: 1px solid #272727;
+  margin: 0 5px;
+}
+
+html body .search-input input::-webkit-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-input input:-ms-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-input input::-ms-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-input input::placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-input input:focus::-webkit-input-placeholder {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html body .search-input input:focus:-ms-input-placeholder {
+  transform: translateX(-50%);
+}
+
+html body .search-input input:focus::-ms-input-placeholder {
+  transform: translateX(-50%);
+}
+
+html body .search-input input:focus::placeholder {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html body .search-input button {
+  padding: 10px 15px;
+  outline: none;
+  background-color: #272727;
+  color: #EFF1F3;
+  border: 1px solid #272727;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+html body .search-input address {
+  margin-right: 20%;
+}
+
+html body .list-file {
+  width: 80%;
+  margin: 20px auto;
+}
+
+html body .list-file h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+html body .list-file h3 a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #272727;
+  border: 1px solid #272727;
+}
+
+html body .list-file h3 a:hover {
+  background-color: #272727;
+  color: #EFF1F3;
+}
+
+html body .list-file ul {
+  list-style-type: none;
+  padding: 20px 0;
+}
+
+html body .list-file ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #272727;
+}
+
+html body .list-file ul li a {
+  text-decoration: none;
+  color: #272727;
+}
+
+html body .list-file ul li a:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body .list-file ul li a:nth-child(1) img {
+  margin-right: 20px;
+}
+
+html body .list-file ul li a:nth-child(1):hover {
+  color: #DB162F;
+}
+
+html body .list-file ul li .LocalClipBoard {
+  cursor: copy;
+}
+
+html body .list-file ul li .LocalClipBoard:hover {
+  color: #DB162F;
+}
+
+html body .list-file ul li.reverse a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+html body .list-file ul li:last-child {
+  border-bottom: none;
+}
+
+html body .search-pop-up {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+  width: 60%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #272727;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-pop-up.active {
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+html body .search-pop-up .content #AdvencedName {
+  padding: 10px 15px;
+  outline: none;
+  background-color: #272727;
+  color: #EFF1F3;
+  border: 1px solid #EFF1F3;
+  margin: 0 5px;
+}
+
+html body .search-pop-up .content #AdvencedName::-webkit-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-pop-up .content #AdvencedName:-ms-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-pop-up .content #AdvencedName::-ms-input-placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-pop-up .content #AdvencedName::placeholder {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+html body .search-pop-up .content #AdvencedName:focus::-webkit-input-placeholder {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html body .search-pop-up .content #AdvencedName:focus:-ms-input-placeholder {
+  transform: translateX(-50%);
+}
+
+html body .search-pop-up .content #AdvencedName:focus::-ms-input-placeholder {
+  transform: translateX(-50%);
+}
+
+html body .search-pop-up .content #AdvencedName:focus::placeholder {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+html body .search-pop-up .content #AdvencedSubmit {
+  padding: 10px 15px;
+  outline: none;
+  background-color: #272727;
+  color: #EFF1F3;
+  border: 1px solid #EFF1F3;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+html body .search-pop-up .content .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+html body .search-pop-up .content .close a {
+  color: #EFF1F3;
+  cursor: pointer;
+}
+
+html body .pop-up-parameter {
+  background-color: #EFF1F3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #272727;
+  display: none;
+}
+
+html body .pop-up-parameter .containeur-mid {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "choix changeZone";
+}
+
+html body .pop-up-parameter .containeur-mid .leave {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid #272727;
+  border-radius: 4px;
+}
+
+html body .pop-up-parameter .containeur-mid .leave:hover {
+  background-color: #272727;
+  color: #EFF1F3;
+}
+
+html body .pop-up-parameter .containeur-mid .choise {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: choix;
+  height: 100%;
+}
+
+html body .pop-up-parameter .containeur-mid .choise ul {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: auto;
+  border-right: 1px solid #272727;
+}
+
+html body .pop-up-parameter .containeur-mid .choise ul li {
+  width: 100%;
+  padding: 0;
+  padding: 20px 0px;
+  border-bottom: 1px dotted #272727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+html body .pop-up-parameter .containeur-mid .choise ul li.active {
+  background-color: #272727;
+  color: #EFF1F3;
+}
+
+html body .pop-up-parameter .containeur-mid .choise ul li.active:hover {
+  background-color: #343434;
+}
+
+html body .pop-up-parameter .containeur-mid .choise ul li:hover {
+  background-color: #747474;
+  color: #EFF1F3;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: changeZone;
+  padding: 50px;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone > div {
+  display: none;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone > div.active {
+  display: block;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone > div.reponse {
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  color: #34b70c;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces {
+  height: 100%;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .selecteur {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .selecteur select {
+  max-width: 200px;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #EFF1F3;
+  border: 1px solid #272727;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .selecteur select option {
+  border-radius: none;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element {
+  width: 80%;
+  display: none;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element.active {
+  display: block;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element form {
+  padding: 15px 0;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element form input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #EFF1F3;
+  border: 1px solid #272727;
+  margin: 0 2px;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element form input[type=submit] {
+  cursor: pointer;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .acces-element form input[type=submit]:hover {
+  background-color: #272727;
+  color: #EFF1F3;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .create-acces {
+  border-top: 1px solid #272727;
+  margin-top: 15px;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .create-acces form {
+  padding: 15px 0;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .create-acces form input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: #EFF1F3;
+  border: 1px solid #272727;
+  margin: 0 2px;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .create-acces form input[type=submit] {
+  cursor: pointer;
+}
+
+html body .pop-up-parameter .containeur-mid .changeZone .acces .create-acces form input[type=submit]:hover {
+  background-color: #272727;
+  color: #EFF1F3;
+}
+/*# sourceMappingURL=style.css.map */
