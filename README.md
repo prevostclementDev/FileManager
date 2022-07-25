@@ -11,6 +11,7 @@
   ```
 
 	2. put them on your server's base
+	( Ex : www/ or htdocs/ )
 
 	3. Run your server
 
@@ -22,7 +23,7 @@
 
 ## SCAN PREFERENCE :
 
-	You can choose the base of the file you are going to scan.
+	You can choose the base of the folder you are going to scan.
 	Just go to the settings on the top right and add a preference.
 
 	Then you have to activate it by going to the same settings menu.
