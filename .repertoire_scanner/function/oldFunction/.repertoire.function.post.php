@@ -1,5 +1,7 @@
 <?php
-
+/**
+ * @var $acces_preference
+ */
     // TODO message erreur à faire en cas de problème
 
     /* UPDATE PREFERENCE ACCES */

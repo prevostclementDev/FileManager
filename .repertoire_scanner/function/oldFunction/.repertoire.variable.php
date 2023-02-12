@@ -1,4 +1,9 @@
 <?php
+
+/**
+ * @var $acces_preference
+ */
+
     /* ALL LISTING */
     $AllListing = false; // If value is true it's possible they have performance bug and style bug
 
@@ -25,22 +30,6 @@
     $parent_get_url = "";
     $server = $_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']; // BASE SERVER URL
 
-    
+    $acces = $_SERVER['CONTEXT_DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']; // LOCAL ACCES
+    $acces_serveur = $server.$_SERVER['REQUEST_URI']; // SERVEUR ACCES
 
-    $parentD_false_xml = false;
-
-    if ( file_exists($acces_preference) && get_active_pref($acces_preference)[0] != false ) {
-
-        $active_pref = get_active_pref($acces_preference)[1];
-
-        $acces_serveur = $active_pref['server'].$_SERVER['REQUEST_URI'];
-        $acces = $active_pref['acces'].$_SERVER['REQUEST_URI'];
-
-        $parentD_false_xml = true;
-
-    } else {
-    
-        $acces = $_SERVER['CONTEXT_DOCUMENT_ROOT'].$_SERVER['REQUEST_URI']; // LOCAL ACCES
-        $acces_serveur = $server.$_SERVER['REQUEST_URI']; // SERVEUR ACCES
-
-    }

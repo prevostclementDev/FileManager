@@ -1,4 +1,5 @@
 <?php
+
     $acces_preference = '.repertoire_scanner/preference/pref.xml';
 
     function readXmlToTab(string $XmlNameFile): array

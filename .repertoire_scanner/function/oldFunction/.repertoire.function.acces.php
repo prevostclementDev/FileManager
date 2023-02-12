@@ -21,7 +21,7 @@
         /* ############################### */
         /* GET FORMAT OF URL WITHOUT $_GET */
         /* ############################### */
-        function format_old_acces($acces_old) : array {
+        function format_old_acces(String $acces_old) : array {
     
             $acces_old = explode("?",$acces_old,-1);
     

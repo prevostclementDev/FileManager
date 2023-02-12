@@ -3,17 +3,17 @@
 /* LISTING FILE AND RETURN ARRAY */
 /* ############################## */
 
-function listing_file($acces,$server_url,$support_file,$AllListing) : array {
+function listing_file($acces,$server_url,$support_file,$AllListing,$notIncludeArray = []) : array {
     if(is_dir($acces)) { // SI ON PARCOURS PAS UN FICHIER Ex : .php
 
         $return_value = array(); // RETURN
         $scan = scandir($acces); // SCAN FOLDER
 
-        if($scan != false) {
+        if($scan) {
 
             foreach($scan as $fichier) { // RUN FOLDER
 
-                if( substr($fichier,0,1) != "." ) { // TOUT LES FICHIER QUI COMMENT PAR UN POINT NE SONT PAS COMPRIS
+                if( substr($fichier,0,1) != "."  && !in_array($fichier,$notIncludeArray) ) {
                     $childs_values = false;
 
                     if(is_dir($acces.$fichier)) {
@@ -26,7 +26,9 @@ function listing_file($acces,$server_url,$support_file,$AllListing) : array {
                             $childs_values = listing_file(
                                 $acces.$acces_file_name,
                                 $server_url.$acces_file_name,
-                                $support_file,$AllListing
+                                $support_file,
+                                $AllListing,
+                                $notIncludeArray
                             )[1];
 
                         } else {

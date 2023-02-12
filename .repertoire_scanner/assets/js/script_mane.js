@@ -112,9 +112,12 @@ function ajax_request_researh(searchValue){
 
     let ajax = new XMLHttpRequest();
 
+    const acces = document.querySelector('.metaAcces').getAttribute('data-acces');
+    const accesUrl = document.querySelector('.metaAccesUrl').getAttribute('data-accesUrl');
+
     ajax.open(
         "GET",
-        '../.repertoire_scanner/function/.repertoire.function.ajaxReturn.php?search_advenced='+searchValue+'&acces=no&acces_serveur=no',
+        '../.repertoire_scanner/api/advencedSearch.php?search_advenced='+searchValue+'&acces='+acces+'&acces_serveur='+accesUrl,
         true
     );
 
@@ -258,14 +261,5 @@ ChoiceMenu.addEventListener('click',function(e){
         document.querySelector('.pop-up-parameter .containeur-mid .changeZone .'+ToOpen).classList.add('active');
 
     } 
-
-})
-
-const preferenceSelectAcces = document.querySelector('#preference-select-parameter');
-/* SHOW ACCES MENU */
-preferenceSelectAcces.addEventListener('change',function(){
-
-    document.querySelector('.pop-up-parameter .acces .acces-element.active').classList.remove('active');
-    document.querySelector('.pop-up-parameter .acces .'+preferenceSelectAcces.value).classList.add('active');
 
 })

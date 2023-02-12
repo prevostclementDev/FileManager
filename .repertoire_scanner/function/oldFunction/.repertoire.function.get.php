@@ -1,4 +1,8 @@
 <?php
+/**
+ * @var $acces
+ * @var $acces_serveur
+ */
     session_start();
 
     if(isset($_GET['acces']) && isset($_GET['acces_serveur'])) {

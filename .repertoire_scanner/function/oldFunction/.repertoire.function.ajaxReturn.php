@@ -1,17 +1,26 @@
 <?php
+/**
+ * @var $support_file
+ * @var $accesAddonsForIcon
+ */
 
     if( isset($_GET['search_advenced']) && is_string($_GET['search_advenced'] ) ) {
 
         require_once '../.repertoire.php';
 
         $list_search = listing_file(
-            $_SESSION['base_acces'][0],
-            $_SESSION['base_acces'][1],
+            $_GET['acces'],
+            $_GET['acces_serveur'],
             $support_file,
-            true
+            true,
+            array(
+                'node_modules',
+                'vendor'
+            )
         )[1];
 
-        echo json_encode(AdvencedSearch($list_search,$_GET['search_advenced'],$result=[])); 
+
+        echo json_encode(AdvencedSearch($list_search,$_GET['search_advenced'],$result=[]));
 
     } else {
 
@@ -27,7 +36,7 @@
         
         foreach($list_search as $key => $folder) {
 
-            if( strpos(strtolower($folder['filename']),strtolower($howSearch)) !== false ) { // TODO mettre STR CONTAINS EN PHP 8
+            if( str_contains(strtolower($folder['filename']),strtolower($howSearch)) !== false ) {
 
                 $result[] =
                 array(
