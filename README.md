@@ -1,14 +1,15 @@
 # FileManager
 
 #### CREATE BY : Clément Prévost
-#### VERSION : 1.00
+#### VERSION : 1.1
 
-## INSTALLATION : 
+### UPDATE :
+> Code maintenance and optimization.
 
-	1. download : .repertoire_scanner/ & index.php 
-  ```
-  git clone https://github.com/prevostclementDev/FileManager.git
-  ```
+## INSTALLATION :
+
+	1. download : .repertoire_scanner/ & index.php
+    > git clone https://github.com/prevostclementDev/FileManager.git
 
 	2. put them on your server's base
 	( Ex : www/ or htdocs/ )
@@ -31,4 +32,4 @@
 ## SHORTCUT :
 
 	SHIFT + B : return to next file.
-	SHIFT + C : Copy the local access, from where you are located
+	SHIFT + C : Copy the local access, from where you 
