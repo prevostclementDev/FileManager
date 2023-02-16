@@ -2,5 +2,27 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/1__code/PHP/poo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/1_backup_site/bck_GestionnaireProjet_V1_08082022" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/2_GestionnaireProjet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/3.2_Portfolio_photo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/4_site_integration_TNF" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/5.1_EscoreMobileVersion/EscoreFront" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/6_site_integration_IMMO" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/8_GestionnaireBancaire/API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/8_GestionnaireBancaire/ApplicationWeb" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/2__site/__fromscratch/8_GestionnaireBancaire/SiteVitrineV2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/ConceptionWordPress/wp-content/plugins/immo_wp_addons" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/ConceptionWordPress/wp-content/themes/immoEdmon" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/POO/Symfony/getStarted" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/POO/Symfony/projetExo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/_cours_IntegrationWeb/cours_mds_5_interogationMaquette" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/cours_js/strapiNuxt.js/my-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/cours_js/strapiNuxt.js/nuxtFrontEnd" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/3_cours_mds/cours_js/vue-project" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/__code/poo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/__site/__fromscratch/A-BACKUP/bck_GestionnaireProjet_V1_08082022" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/__site/__fromscratch/GestionnaireProjet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/__site/__fromscratch/VillaMonthoux_reproduction" vcs="Git" />
   </component>
 </project>

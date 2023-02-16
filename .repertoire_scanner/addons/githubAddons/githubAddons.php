@@ -5,7 +5,7 @@ class GithubAddons {
     public string $name = 'GithubAddons';
     public string $title = 'Github';
     public string $icon;
-    public string $url = 'https://github.com/prevostclementDe';
+    public string $url = 'https://github.com/prevostclementDev';
     public bool $active = true;
     public int $order = 3;
 
