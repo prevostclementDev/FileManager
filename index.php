@@ -17,8 +17,7 @@
 
     <meta name='robots' content='noindex, nofollow' />
 
-    <meta class="metaAcces" data-acces="<?= $accesRepo->getAcces() ?>" >
-    <meta class="metaAccesUrl" data-accesUrl="<?= $accesRepo->getAccesServeur() ?>">
+    <?php $accesRepo->displayMetaAcces() ?>
     <title>File Manager</title>
 </head>
 
@@ -35,19 +34,12 @@
             </div>
 
             <div class="right-btn">
-
-                <?php
-                
-                if( $accesRepo->getServer() != "") {
-
-                echo '<a target="_blank" href="'.$accesRepo->getServer().'/phpmyadmin/">PhpMyAdmin</a>';
-
-                }
-
-                ?>
-
+                <?php $accesRepo->displayPhpMyAdmin(
+                        '',
+                        '_blank',
+                        'SQLgestion'
+                ); ?>
                 <a class="parameterBtn" > <img src=".repertoire_scanner/assets/images/addons/parameter.png" alt=""> </a>
-
             </div>
 
         </nav>
@@ -68,33 +60,17 @@
          <!-- ######################### -->
          <div class="list-file">
             <h3>
-                <?php
-                    if( $accesRepo->getParentGetUrl() != "" ) {
-                        ?>
-                            <a class="goBack" href="<?php
-
-                            if ( $accesRepo->parent_directory($accesRepo->getAccesServeur()) ==  $accesRepo->getParentGetUrl()) {
-
-                               echo $accesRepo->getServer();
-
-                            } else {
-
-                                echo  $accesRepo->getParentGetUrl();
-
-                            }
-                            ?>">Go To Parent</a>
-
-                        <?php
-                    }
-
-                ?>
-
+                <?php $accesRepo->displayParentButton(
+                        'goBack',
+                      'Parent folder'
+                ); ?>
             </h3>
-            <?php
-
-                $ListingRepo->display_listing( $accesRepo->getAcces() , $accesRepo->getAccesServeur() , $accesRepo->getParentGetUrl() , [] );
-
-            ?>
+            <?php $ListingRepo->display_listing(
+                    $accesRepo->getAcces() ,
+                    $accesRepo->getAccesServeur() ,
+                    $accesRepo->getParentGetUrl() ,
+                    []
+            ); ?>
 
         </div>
 
@@ -173,33 +149,9 @@
         <!-- ######################### -->
         <!-- ADDONS -->
         <!-- ######################### -->
-        
-        <div class="addons">
 
-            <?php
-            
-                foreach( $addons as $value ) {
+        <?php $addonsRepo->displayAddonsBar() ?>
 
-                    if ( $value->active ) {
-                        $url = $value->url;
-                        $class = '';
-                        if ( str_contains( $value->url , 'frame|' ) ) {
-                            $url = explode('|',$value->url)[1];
-                            $class = 'iframeOpener';
-                        }
-
-                    ?>
-                        <a target="_blank" class="cells <?= $class ?>" href="<?= $url  ?>" style="order: <?= $value->order ?>;">
-                            <div class="logo" style="background: url('<?= $value->icon ?>'); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
-                        </a>
-                    <?php
-                    }
-
-                }
-
-            ?>
-
-        </div>
 
     </body>
 

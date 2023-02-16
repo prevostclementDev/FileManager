@@ -2,7 +2,10 @@
 
     require_once '../autoload.php';
 
-    $ListingRepo = new RepertoireListingAdvenced();
+    $ListingRepo = new RepertoireListingAdvenced(array(
+        'node_modules',
+        'vendor'
+    ));
 
     if ( $ListingRepo->sendApi() ) {
         $ListingRepo->jsonFormatListing();

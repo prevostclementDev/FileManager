@@ -93,4 +93,41 @@ class RepertoireAcces {
         return $this->acces_serveur;
     }
 
+// #########################
+// ##### DISPLAYER #########
+// #########################
+
+    public function displayMetaAcces() {
+        ?>
+        <meta class="metaAcces" data-acces="<?= $this->acces ?>" >
+        <meta class="metaAccesUrl" data-accesUrl="<?= $this->acces_serveur ?>">
+        <?php
+    }
+
+    public function displayParentButton(String $class = "goBack",String $intitule = "parent directory") {
+        if( $this->getParentGetUrl() != "" ) {
+            ?>
+            <a class="<?= $class ?>" href="<?php
+
+            if ( $this->parent_directory($this->getAccesServeur()) ==  $this->getParentGetUrl()) {
+
+                echo $this->getServer();
+
+            } else {
+
+                echo  $this->getParentGetUrl();
+
+            }
+            ?>"><?= $intitule ?></a>
+
+            <?php
+        }
+    }
+
+    public function displayPhpMyAdmin(String $class = "", String $target = "_blank" , String $intitule = "PhpMyAdmin"){
+        if( $this->server != "") {
+            echo '<a class="'.$class.'" target="'.$target.'" href="'.$this->server.'/phpmyadmin/">'.$intitule.'</a>';
+        }
+    }
+
 }

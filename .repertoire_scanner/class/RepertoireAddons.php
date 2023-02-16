@@ -44,4 +44,33 @@ class RepertoireAddons {
         return $this->scanStatus;
     }
 
+// #########################
+// ##### DISPLAYER #########
+// #########################
+
+    public function displayAddonsBar() {
+
+        echo '<div class="addons">';
+        foreach( $this->getAddons() as $value ) {
+
+            if ( $value->active ) {
+                $url = $value->url;
+                $class = '';
+                if ( str_contains( $value->url , 'frame|' ) ) {
+                    $url = explode('|',$value->url)[1];
+                    $class = 'iframeOpener';
+                }
+
+                ?>
+                <a target="_blank" class="cells <?= $class ?>" href="<?= $url  ?>" style="order: <?= $value->order ?>;">
+                    <div class="logo" style="background: url('<?= $value->icon ?>'); background-position: center; background-size: contain; background-repeat: no-repeat;"></div>
+                </a>
+                <?php
+            }
+
+        }
+        echo '</div>';
+
+    }
+
 }

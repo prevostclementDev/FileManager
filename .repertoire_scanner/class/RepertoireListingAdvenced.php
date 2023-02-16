@@ -2,10 +2,7 @@
 
 class RepertoireListingAdvenced extends RepertoireListing {
 
-    private array $notIncludeArray = array(
-        'node_modules',
-        'vendor'
-    );
+    private array $notIncludeArray = array();
     private string $howSearch = '';
     private ?string $accesSearch = null;
     private ?string $accesServerSearch  = null;
@@ -13,7 +10,7 @@ class RepertoireListingAdvenced extends RepertoireListing {
     public function __construct($notIncludeArray = false){
         parent::__construct(true);
 
-        if($notIncludeArray &&  is_array($notIncludeArray)) {
+        if($notIncludeArray && is_array($notIncludeArray)) {
             $this->notIncludeArray = $notIncludeArray;
         }
 

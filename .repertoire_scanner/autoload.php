@@ -18,8 +18,8 @@
 
     function loadFunction($classname) {
 
-        if ( file_exists($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'.repertoire_scanner/function/'.$classname.".php") ) {
-            require_once $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'.repertoire_scanner/function/'.$classname.".php";
+        if ( file_exists($_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'.repertoire_scanner/class/'.$classname.".php") ) {
+            require_once $_SERVER['DOCUMENT_ROOT'].DIRECTORY_SEPARATOR.'.repertoire_scanner/class/'.$classname.".php";
         }
 
     }
