@@ -39,7 +39,7 @@
                         '_blank',
                         'SQLgestion'
                 ); ?>
-                <a class="parameterBtn" > <img src=".repertoire_scanner/assets/images/addons/parameter.png" alt=""> </a>
+<!--                <a class="parameterBtn" > <img src=".repertoire_scanner/assets/images/addons/parameter.png" alt=""> </a>-->
             </div>
 
         </nav>
@@ -105,46 +105,46 @@
         <!-- POP UP PARAMETER -->
         <!-- ######################### -->
 
-        <div class="pop-up-parameter">
-
-            <div class="containeur-mid">
-            <div class="leave">
-                Leave
-            </div>
-
-                <div class="choise">
-
-                    <ul>
-                        <li open-zone="test1" class="active">test 1</li>
-                        <li open-zone="test2">test 2</li>
-                        <li open-zone="test3">test 3</li>
-                    </ul>
-
-                </div>
-
-                <div class="changeZone">
-
-                    <div class="test1">
-                        <h1>test 1</h1>
-                    </div>
-
-                    <div class="test2">
-
-                        <h1>test 2</h1>
-                        
-                    </div>
-
-                    <div class="test3">
-
-                        <h1>test 3</h1>
-                        
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
+<!--        <div class="pop-up-parameter">-->
+<!---->
+<!--            <div class="containeur-mid">-->
+<!--            <div class="leave">-->
+<!--                Leave-->
+<!--            </div>-->
+<!---->
+<!--                <div class="choise">-->
+<!---->
+<!--                    <ul>-->
+<!--                        <li open-zone="test1" class="active">test 1</li>-->
+<!--                        <li open-zone="test2">test 2</li>-->
+<!--                        <li open-zone="test3">test 3</li>-->
+<!--                    </ul>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--                <div class="changeZone">-->
+<!---->
+<!--                    <div class="test1">-->
+<!--                        <h1>test 1</h1>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="test2">-->
+<!---->
+<!--                        <h1>test 2</h1>-->
+<!--                        -->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="test3">-->
+<!---->
+<!--                        <h1>test 3</h1>-->
+<!--                        -->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
 
         <!-- ######################### -->
         <!-- ADDONS -->

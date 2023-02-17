@@ -9,6 +9,8 @@ class GithubAddons {
     public bool $active = true;
     public int $order = 3;
 
+    public string $type = 'linkShortCut';
+
     public function __construct() {
 
         $this->icon =  './.repertoire_scanner/addons/GithubAddons/icon.png';

@@ -9,6 +9,8 @@ class googleMail {
     public bool $active = true;
     public int $order = 1;
 
+    public string $type = 'linkShortCut';
+
     public function __construct() {
 
         $this->icon =  './.repertoire_scanner/addons/googleMail/icon.png';

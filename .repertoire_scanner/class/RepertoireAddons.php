@@ -32,15 +32,21 @@ class RepertoireAddons {
 
     }
 
-    public function getAddons() : array|bool {
+    public function getAddons(String $type = 'linkShortCut') : array|bool {
 
         if ( empty($this->addons) ) {
             $this->addonsScanner();
         }
 
         if ( $this->scanStatus ) {
-            return $this->addons;
+            return array_filter(
+                $this->addons,
+                function($addons) use ($type) {
+                    return ($addons->type === $type) ? $addons : false;
+                }
+            );
         }
+
         return $this->scanStatus;
     }
 
@@ -48,7 +54,7 @@ class RepertoireAddons {
 // ##### DISPLAYER #########
 // #########################
 
-    public function displayAddonsBar() {
+    public function displayAddonsBar() : void {
 
         echo '<div class="addons">';
         foreach( $this->getAddons() as $value ) {

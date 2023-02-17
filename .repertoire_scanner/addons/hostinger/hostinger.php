@@ -9,6 +9,8 @@ class hostinger {
     public bool $active = true;
     public int $order = 4;
 
+    public string $type = 'linkShortCut';
+
     public function __construct() {
 
         $this->icon =  './.repertoire_scanner/addons/hostinger/icon.png';

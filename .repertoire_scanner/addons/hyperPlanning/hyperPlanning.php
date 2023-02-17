@@ -9,6 +9,8 @@ class HyperPlanning {
     public bool $active = true;
     public int $order = 0;
 
+    public string $type = 'linkShortCut';
+
     public function __construct() {
         $this->icon =  './.repertoire_scanner/addons/HyperPlanning/icon.png';
     }

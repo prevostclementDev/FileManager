@@ -9,6 +9,8 @@ class googleAgenda {
     public bool $active = true;
     public int $order = 2;
 
+    public string $type = 'linkShortCut';
+
     public function __construct() {
 
         $this->icon =  './.repertoire_scanner/addons/googleAgenda/icon.png';
