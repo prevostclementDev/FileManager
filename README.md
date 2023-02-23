@@ -22,12 +22,6 @@
 
 	to hide a file. Add a dot "." at the beginning of your file name
 
-## SCAN PREFERENCE :
-
-	You can choose the base of the folder you are going to scan.
-	Just go to the settings on the top right and add a preference.
-
-	Then you have to activate it by going to the same settings menu.
 
 ## SHORTCUT :
 
